@@ -69,8 +69,8 @@ function arlina-comments(tb) {
     }
     commentsHtml += '</ul>';
     var hideCSS = "";
-    if(hideCredits == true) {
-        hideCSS = "display:none;"
+    if(hideCredits == false) {
+        hideCSS = "display:block;"
     }
     commentsHtml += "<span style=\"font-size:10px;display:block;text-align:right;" + hideCSS + "\"></span>";
     document.write(commentsHtml)

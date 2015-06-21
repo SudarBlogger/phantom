@@ -1,4 +1,3 @@
-//<![CDATA[
 var numComments = numComments || 5
     , avatarSize = avatarSize || 60
     , characters = characters || 40
@@ -76,4 +75,3 @@ function arlina-comments(tb) {
     commentsHtml += "<span style=\"font-size:10px;display:block;text-align:right;" + hideCSS + "\"></span>";
     document.write(commentsHtml)
 }
-//]]>

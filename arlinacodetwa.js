@@ -6,9 +6,6 @@ var mql = window.matchMedia('screen and (min-width: 60em)');if (mql.matches){
 $(document).ready(function(){$("#sidebar-wrapper").theiaStickySidebar({additionalMarginTop:90,additionalMarginBottom:8})});};
 // Youtube Responsive
 setTimeout(function(){$(".video-youtube").each(function(){$(this).replaceWith('<iframe class="video-youtube loader" src="'+$(this).data("src")+'" allowfullscreen="allowfullscreen" height="281" width="500"></iframe>')})},5e3);
-// Highlighter
-$('i[rel="pre"]').replaceWith(function(){return $("<pre><code>"+$(this).html()+"</code></pre>")});for(var pres=document.querySelectorAll("pre,code,kbd,blockquote,td"),i=0;i<pres.length;i++)pres[i].addEventListener("dblclick",function(){var e=getSelection(),t=document.createRange();t.selectNodeContents(this),e.removeAllRanges(),e.addRange(t)},!1);
-function downloadJSAtOnload(){var e=document.createElement("script");e.src="https://rawcdn.githack.com/Arlina-Design/frame/6c8ec00f/highlightr.js",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
 // Disqus One
 !function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//"+disqus_shortname+".disqus.com/blogger_item.js",(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(e)}();
 // Disqus
